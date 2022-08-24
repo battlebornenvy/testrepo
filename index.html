@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Get Rich Interest Calculator</title>
+    </head>
+    <!--Section of the webapp from the rest of the page-->
+<div class="maindiv">
+    
+    <!--body of the wepapp-->
+    <body>
+        <h1>Simple Interest Calculator</h1>
+        
+        <!--Input field to put the amount of the amount to be saved-->
+        Amount <input type="number"  id="principal">
+        <br/>
+        <br/>
+        
+        <!--Range slider to choose the rate of the intrest-->
+        Rate <input type="range"  id="rate" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()">
+        <span id="rate_val">
+        10.25%
+        </span>
+        <br/>
+        <br/>
+        
+        <!--Drop down options for years in the future-->
+        No. of Years <select id="years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <br/>
+        <br/>
+        
+        <!--This button will compute the input fields-->
+        <button onclick="compute(), valPrincipal()">Compute Interest</button>
+        <br/>
+        <br/>
+        
+        <!--This is where the results will show up-->
+        <span id="result">
+        
+        </span>
+        <br/>        
+
+        <!--Footer information-->
+        <footer>
+
+            &#169; Everyone Can Get Rich<br/>
+            This Calculator belongs to John
+
+        </footer>
+    </body>
+</div>
+</html>

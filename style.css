@@ -1,0 +1,20 @@
+/* This is the body style */
+body {background-color:black;font-family: arial;color:white}
+
+/* This is the header style */
+h1{color:grey;font-family: verdana;}
+
+/* This is the Div tag style */
+.maindiv{
+    background-color: white;
+    color:black;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    align: center;
+}
+
+/* highlight the variables */
+.highlight{
+    background-color:yellow;
+}
